@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRD</title>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+.section-padding {
+    position: relative;
+    height: 100vh;
+}
+
+.section-bg {
+    background-image: url("https://www.ebony.com/wp-content/uploads/2016/07/Black_Mens_Health_Checkup_original_33114.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 59%;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.section-bg:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #32D6BE;
+    opacity: 0.9;
+}
+
+.contact-form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    margin-bottom: 17px;
+    color: #333;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.contact-form input[type="submit"] {
+    width: auto;
+    padding: 15px 30px;
+    color: #32D6BE;
+    background: white;
+    font-weight: bold;
+}
+
+.appointment-text {
+    padding-left: 100px;
+    padding-top: 140px;
+}
+
+ul li i {
+    padding-right: 10px;
+    color: #32D6BE;
+}
+
+.boxed-btn {
+    padding: 10px 30px;
+    background: #32D6BE;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.boxed-btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h2.absolute-text {
+    color: white;
+    position: absolute;
+    top: 29%;
+    left: -60px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    letter-spacing: 2px;
+
+}
+
+ul {
+    margin: 40px 0;
+}
+
+ul li {
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .section-bg {
+        width: 100%;
+    }
+
+    .appointment-text {
+        padding-left: 0px;
+        padding-top: 140px;
+    }
+
+    h2.absolute-text {
+        color: white;
+        position: absolute;
+        top: 32px;
+        left: 24px;
+        writing-mode: inherit;
+        transform: none;
+        letter-spacing: 2px;
+    }
+
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    h2.absolute-text {
+        color: white;
+        position: absolute;
+        top: 32px;
+        left: 24px;
+        writing-mode: inherit;
+        transform: none;
+        letter-spacing: 2px;
+    }
+    .appointment-text {
+        padding-left: 20px;
+        padding-top: 140px;
+    }
+
+}
+</style>
+<body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="/about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <a href="/product" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">product</a>
+              </li>
+              <li>
+                <a href="/contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container mx-auto px-4">
+        
+
+    
+    
+        <div class="section-padding">
+            <div class="section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="contact-form">
+                            <h2 class="absolute-text">Appointment</h2>
+                            <form action="index.html">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="First Name*">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Last Name*">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="tel" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="date" placeholder="Date">
+                                    </div>
+                                </div>
+                                <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Observation"></textarea></p>
+                                <p><input type="submit" value="Make Appointment"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="appointment-text">
+                            <h5>We eliminate the inconvinience of multiple visits.</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-shield-alt"></i>No Second Injection or Temporaries</li>
+                                <li><i class="fas fa-shield-alt"></i>No Unprofessional Doctors</li>
+                                <li><i class="fas fa-shield-alt"></i>No Poor Quality Products</li>
+                                <li><i class="fas fa-shield-alt"></i>No Student at Australian University</li>
+                            </ul>
+                            <a href="" class="boxed-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+      </div>
+</body>
+</html>
